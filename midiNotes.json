@@ -76,4 +76,116 @@
         "octave" : 1,
         "period" : 20.41
     },
+    {
+        "name" : "G#1",
+        "midiValue" : 32,
+        "frequency" : 51.913,
+        "octave" : 1,
+        "period" : 19.26
+    },
+    {
+        "name" : "A1",
+        "midiValue" : 33,
+        "frequency" : 55.000,
+        "octave" : 1,
+        "period" : 18.18
+    },
+    {
+        "name" : "A#1",
+        "midiValue" : 34,
+        "frequency" : 58.270,
+        "octave" : 1,
+        "period" : 17.16
+    },
+    {
+        "name" : "B1",
+        "midiValue" : 35,
+        "frequency" : 61.735,
+        "octave" : 1,
+        "period" : 16.20
+    },
+    {
+        "name" : "C2",
+        "midiValue" : 36,
+        "frequency" : 65.406,
+        "octave" : 2,
+        "period" : 15.29
+    },
+    {
+        "name" : "C#2",
+        "midiValue" : 37,
+        "frequency" : 69.296,
+        "octave" : 2,
+        "period" : 14.29
+    },
+    {
+        "name" : "D2",
+        "midiValue" : 38,
+        "frequency" : 73.416,
+        "octave" : 2,
+        "period" : 13.62
+    },
+    {
+        "name" : "D#2",
+        "midiValue" : 39,
+        "frequency" : 77.782,
+        "octave" : 2,
+        "period" : 12.86
+    },
+    {
+        "name" : "E2",
+        "midiValue" : 40,
+        "frequency" : 82.407,
+        "octave" : 2,
+        "period" : 12.13
+    },
+    {
+        "name" : "F2",
+        "midiValue" : 41,
+        "frequency" : 87.307,
+        "octave" : 2,
+        "period" : 11.45
+    },
+    {
+        "name" : "F#2",
+        "midiValue" : 42,
+        "frequency" : 92.499,
+        "octave" : 2,
+        "period" : 10.81
+    },
+    {
+        "name" : "G2",
+        "midiValue" : 43,
+        "frequency" : 97.999,
+        "octave" : 2,
+        "period" : 10.20
+    },
+    {
+        "name" : "G#2",
+        "midiValue" : 44,
+        "frequency" : 103.83,
+        "octave" : 2,
+        "period" : 9.631
+    },
+    {
+        "name" : "A2",
+        "midiValue" : 45,
+        "frequency" : 110.00,
+        "octave" : 2,
+        "period" : 9.091
+    },
+    {
+        "name" : "A#2",
+        "midiValue" : 46,
+        "frequency" : 116.54,
+        "octave" : 2,
+        "period" : 8.581
+    },
+    {
+        "name" : "B2",
+        "midiValue" : 47,
+        "frequency" : 123.47,
+        "octave" : 2,
+        "period" : 8.099
+    },
 ]
