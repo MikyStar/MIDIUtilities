@@ -1,0 +1,79 @@
+[
+    {
+        "name" : "A0",
+        "midiValue" : 21,
+        "frequency" : 27.500,
+        "octave" : 0,
+        "period" : 36.36
+    },
+    {
+        "name" : "A#0",
+        "midiValue" : 22,
+        "frequency" : 29.135,
+        "octave" : 0,
+        "period" : 34.32
+    },
+    {
+        "name" : "B0",
+        "midiValue" : 23,
+        "frequency" : 30.868,
+        "octave" : 0,
+        "period" : 32.40
+    },
+    {
+        "name" : "C1",
+        "midiValue" : 24,
+        "frequency" : 32.703,
+        "octave" : 1,
+        "period" : 30.58
+    },
+    {
+        "name" : "C#1",
+        "midiValue" : 25,
+        "frequency" : 34.648,
+        "octave" : 1,
+        "period" : 28.86
+    },
+    {
+        "name" : "D1",
+        "midiValue" : 26,
+        "frequency" : 36.708,
+        "octave" : 1,
+        "period" : 27.24
+    },
+    {
+        "name" : "D#1",
+        "midiValue" : 27,
+        "frequency" : 38.891,
+        "octave" : 1,
+        "period" : 25.71
+    },
+    {
+        "name" : "E1",
+        "midiValue" : 28,
+        "frequency" : 41.203,
+        "octave" : 1,
+        "period" : 24.27
+    },
+    {
+        "name" : "F1",
+        "midiValue" : 29,
+        "frequency" : 43.654,
+        "octave" : 1,
+        "period" : 22.91
+    },
+    {
+        "name" : "F#1",
+        "midiValue" : 30,
+        "frequency" : 46.249,
+        "octave" : 1,
+        "period" : 21.62
+    },
+    {
+        "name" : "G1",
+        "midiValue" : 31,
+        "frequency" : 48.999,
+        "octave" : 1,
+        "period" : 20.41
+    },
+]

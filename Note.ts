@@ -3,9 +3,10 @@ class Note
     private name : string;
     private midiValue : number;
     private frequency : number;
-    private octave : number
+    private octave : number;
+    private periodMs : number;
 
-    constructor(name : string, midiValue : number, frequency : number)
+    constructor(name : string, midiValue : number, frequency : number, octave : number, periodMs : number)
     {
         this.name = name;
 
@@ -15,7 +16,11 @@ class Note
         if(frequency > 0)
             this.frequency = frequency;
 
-        this.setOctave();
+        if(octave >= 0)
+            this.octave = octave;
+
+        if(periodMs > 0)
+            this.periodMs = periodMs;
     }
 
     public getName() : string
@@ -33,9 +38,14 @@ class Note
         return this.frequency;
     }
 
-    private setOctave() : void
+    public getOctave() : number
     {
-        this.octave = Number(this.name.substr(this.name.length - 1)); // Cast the last char of name to a number;
+        return this.octave;
+    }
+
+    public getPeriod() : number
+    {
+        return this.periodMs;
     }
 }
 
