@@ -1,0 +1,28 @@
+{
+  "name": "MIDIUtilities",
+  "version": "1.0.0",
+  "description": "This is a simple API to get MIDI information on notes such as the frequency or the name. <br> The JSON file containing all the notes from octave 0 to 8 has been parsed by myself thanks to [those informations](https://newt.phys.unsw.edu.au/jw/notes.html). <br> You will also find some example of unit tests with the [MochaJS framework](https://mochajs.org/)",
+  "main": "run.html",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0"
+  },
+  "scripts": {
+    "test": "mocha --require babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikyStar/MIDIUtilities.git"
+  },
+  "keywords": [],
+  "author": "Mike AUBENAS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikyStar/MIDIUtilities/issues"
+  },
+  "homepage": "https://github.com/MikyStar/MIDIUtilities#readme"
+}
