@@ -26,16 +26,6 @@ export default class NoteFactory
         this._arrayOfNotes = this.generateArrayOfNotes();
     }
 
-    getArrayOfFrequencies()
-    {
-        return this._arrayOfFrequencies;
-    }
-
-    getArrayOfPeriods()
-    {
-        return this._arroyOfPeriods;
-    }
-
     generateArrayOfNotes()
     {
         let arrayNotes = new Array();
@@ -54,25 +44,25 @@ export default class NoteFactory
             }
         }
 
-        function addLastNotes(array)
-        {
-            array.push("A7", "A#7", "B7", "C8", "C#8");
-        }
-
-        addLastNotes(arrayNotes);
+        arrayNotes.push("A7", "A#7", "B7", "C8"); /* To add the notes not matching the logic */
 
         return arrayNotes;
+    }
+
+    getArrayOfFrequencies() { return this._arrayOfFrequencies; }
+
+    getArrayOfPeriods() { return this._arroyOfPeriods; }
+
+    getArrayOfNotes(){ return this._arrayOfNotes; }
+
+    /*
+        From A0 to C8 
+     */
+    generateNotes()
+    {
         /* 
-            ! TODO correct, length not natching others arrays
+            ! TODO
         */
     }
 
-    getArrayOfNotes()
-    {
-        return this._arrayOfNotes;
-    }
 }
-
-let factory = new NoteFactory();
-
-console.log(factory.getArrayOfNotes());
