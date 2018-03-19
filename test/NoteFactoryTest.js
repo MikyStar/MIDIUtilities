@@ -1,56 +1,59 @@
 import NoteFactory from '../core/NoteFactory';
 
-let assert = require('assert');
+const assert = require('assert');
 
-let noteFactory = new NoteFactory();
-let arrayOfFrequencies = noteFactory.getArrayOfFrequencies();
-
-let supposedSize = ( ( 108 - 21 ) + 1);
-
-describe('All frequencies as been correctly add', function()
+describe("NoteFactory's tests\n", function()
 {
-    it('Should return 88 (from 21 to 108)', function()
-    {
-        assert.equal(arrayOfFrequencies.length, supposedSize);
-    });
+    const noteFactory = new NoteFactory();
+    const arrayOfFrequencies = noteFactory.getArrayOfFrequencies();
+    const arrayOfPeriods = noteFactory.getArrayOfPeriods();
+    const arrayOfNotes = noteFactory.getArrayOfNotes();
 
-    it('Frequencies\' array are ascending', function()
-    {
-        let result;
+    const supposedSize = ( ( 108 - 21 ) + 1 );
 
-        for(let i = 0; i < (arrayOfFrequencies.length -1) ; i++)
+    describe('All frequencies as been correctly add', function()
+    {
+        it('Should return 88 (from 21 to 108)', function()
         {
-            if( !(arrayOfFrequencies[i] < arrayOfFrequencies[i+1]) )
+            assert.equal(arrayOfFrequencies.length, supposedSize);
+        });
+    
+        it('Frequencies\' array are ascending', function()
+        {
+            let result;
+    
+            for(let i = 0; i < (arrayOfFrequencies.length -1) ; i++)
             {
-                result = false;
+                if( !(arrayOfFrequencies[i] < arrayOfFrequencies[i+1]) )
+                {
+                    result = false;
+                }
             }
-        }
-
-        result = true;
-
-        assert.equal(result, true);
+    
+            result = true;
+    
+            assert.equal(result, true);
+        });
     });
-});
-
-describe('All periods as been correctly add', function()
-{
-    it('Should return 88 (from 21 to 108)', function()
+    
+    describe('All periods as been correctly add', function()
     {
-        let noteFactory = new NoteFactory();
-        let arrayOfFrequencies = noteFactory.getArrayOfPeriods();
-
-        assert.equal(arrayOfFrequencies.length, supposedSize);
+        it('Should return 88 (from 21 to 108)', function()
+        {
+            assert.equal(arrayOfPeriods.length, supposedSize);
+        });
     });
-});
-
-describe('arrayOfFrequencies and arrayOfPeriods match', function()
-{
-    it('The size of both arrays are the same', function()
+    
+    describe('All arrays have the same lenght', function()
     {
-        let noteFactory = new NoteFactory();
-        let arrayOfFrequencies = noteFactory.getArrayOfPeriods();
-        let arrayOfPeriods = noteFactory.getArrayOfPeriods();
+        it('arrayOfFrequencies and arrayOfPeriods have the same length', function()
+        {
+            assert.equal(arrayOfFrequencies.length, arrayOfPeriods.length);
+        });
 
-        assert.equal(arrayOfFrequencies.length, arrayOfPeriods.length);
+        it("arraysOfFrequencies and arrayOfNotes have the same length", function()
+        {
+            assert.equal(arrayOfFrequencies.length, arrayOfNotes.length);
+        });
     });
 });
