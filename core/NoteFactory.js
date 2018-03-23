@@ -1,3 +1,5 @@
+import Note from './Note';
+
 export default class NoteFactory
 {
     constructor()
@@ -22,23 +24,21 @@ export default class NoteFactory
             0.9020, 0.8513, 0.8034, 0.7584, 0.7159, 0.6757, 0.6378, 0.6020, 0.5682, 0.5363, 0.5062, 0.4778, 0.4510, 0.4257,
             0.4018, 0.3792, 0.3580, 0.3378, 0.3189, 0.3010, 0.2841, 0.2681, 0.2531, 0.2389
         ];
-
-        this._arrayOfNotes = this.generateArrayOfNotes();
     }
 
-    generateArrayOfNotes()
+    getArrayNameOfNotes()
     {
         let arrayNotes = new Array();
-        let firstOctave = [ ["A", 0], ["A#", 0], ["B", 0], ["C", 1], ["C#", 1], 
+        const firstOctave = [ ["A", 0], ["A#", 0], ["B", 0], ["C", 1], ["C#", 1], 
             ["D", 1], ["D#", 1], ["E", 1], ["F", 1], ["F#", 1], ["G", 1], ["G#", 1] ];
 
         for(let i = 0; i < 7; i++)
         {
             for(let j = 0; j < firstOctave.length; j++)
             {
-                let currentNote = firstOctave[j];
+                const currentNote = firstOctave[j];
                 
-                let newNote = new Array(currentNote[0], currentNote[1] + i);
+                const newNote = new Array(currentNote[0], currentNote[1] + i);
 
                 arrayNotes.push(newNote[0] + newNote[1].toString());
             }
@@ -53,16 +53,24 @@ export default class NoteFactory
 
     getArrayOfPeriods() { return this._arroyOfPeriods; }
 
-    getArrayOfNotes(){ return this._arrayOfNotes; }
-
     /*
         From A0 to C8 
      */
-    generateNotes()
+    getNotes()
     {
-        /* 
-            ! TODO
-        */
+        const arrayNameNote = this.getArrayNameOfNotes();
+        const arrayFrequencies = this.getArrayOfFrequencies();
+        const arrayPeriods = this.getArrayOfPeriods();
+
+        let arrayNotes = new Array();
+
+        for(let i = 0; i < arrayNameNote.length; i++)
+        {
+            const midiValue = 21 + i;
+            arrayNotes.push(new Note(arrayNameNote[i], midiValue, arrayFrequencies[i], arrayPeriods[i]));
+        }
+
+        return arrayNotes;
     }
 
 }
